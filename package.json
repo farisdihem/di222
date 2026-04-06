@@ -83,7 +83,8 @@
       "publisherDisplayName": "dihem abd",
       "applicationId": "App",
       "displayName": "dihem1",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "customAssets": "build/appx/Assets"
     },
     "mac": {
       "target": "dmg"
