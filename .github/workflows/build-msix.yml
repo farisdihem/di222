@@ -21,13 +21,13 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Build MSIX
+    - name: Build AppX
       run: npm run dist
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Upload MSIX Artifact
+    - name: Upload AppX Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: Windows-MSIX-Packages
-        path: release/*.msix*
+        name: Windows-AppX-Packages
+        path: release/*.appx*
